@@ -20,6 +20,7 @@ a:hover{
 * {
 	box-sizing: border-box;
 }
+
 /*----------内容----------*/
 
 body{
@@ -36,9 +37,7 @@ main{
 	margin: 0 auto;
 	background-color: #fff;
 }
-.vacant {
-	height: 73px;
-}
+
 header {
 	height: 73px;
 	width: 100%;
@@ -48,23 +47,28 @@ header {
 	padding: 10px;
 	color: #fff;
 }
-.header-container {
- 	max-width: 1170px;
-	width: 100%;
- 	padding: 0 15px;
- 	margin: 0 auto;
+
+.nav-list {
+    display: flex;
+    float: right;
+    line-height: 60px;
+    padding-right: 30px;
 }
 
-.nav-list{
-  display: flex;
-  float: right;
-	line-height: 60px;
-	padding-right: 20px;
-}
 .nav-list li{
-	letter-spacing: 1.5px;
+	letter-spacing: 0.1em;
 	margin-right: 15px;
 	font-size: 15pt;
+}
+
+
+/* top */
+.top {
+	height: 600px;
+	background-image: url(top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #FAFAFA
 }
 
 .container {
@@ -81,26 +85,15 @@ header {
 }
 
 .intro {
-	/*background-color: #50312D;*/
 	color: #fff;
-	height: 200px;
-	padding: 0 20px;
 	font-size: 20px;
 }
 
 .ss{
 	margin-bottom: 1em;
-  text-align: center;
-}
-
-/* top */
-
-.top {
-  height: 600px;
-	background-image: url(top.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-  color: #FAFAFA
+	text-align: center;
+	font-size: 18px;
+	letter-spacing: 0.1em;
 }
 
 /* preparations */
@@ -125,6 +118,14 @@ header {
   border-bottom: solid 1px orange;
 }
 
+.border-bottom {
+	display: inline-block;
+	color: #535353;
+	border-bottom: solid 2px orange;
+	letter-spacing: 0.1em;
+	margin-bottom: 10px;
+}
+
 .preparations .flex {
   margin: 40px 0;
   display: flex;
@@ -134,7 +135,6 @@ header {
 .item {
   text-align: center;
   width: 250px;
-  /* background: #ff11ff; */
 }
 
 .item img {
@@ -171,13 +171,18 @@ header {
   color: #535353;
 }
 
-.grind-desc span {
+.grind-color {
   color: red;
 }
 
-.mill-img {
-  margin:20px 0 40px 0;
+.imgs {
+  margin-top:20px;
 	padding-bottom: 40px;
+}
+
+.images {
+	border-radius: 5%;
+	border: 6px solid #fff;
 }
 
 /* steam */
@@ -185,8 +190,8 @@ header {
   text-align: center;
 }
 
-.steam-img {
-  margin: 20px 0 0 0;
+.steam .imgs {
+	margin: 20px 0 -10px 0;
 }
 
 .steam-desc {
@@ -202,30 +207,15 @@ header {
 	background-color: #F3F3F3
 }
 
-.hotwater-img {
-  margin: 20px 0 0 0;
-	padding-bottom: 40px;
-}
-
 /* pour */
 .pour {
   text-align: center;
-}
-
-.pour-img {
-  margin: 20px 0 0 0;
-	padding-bottom: 40px;
 }
 
 /* complete */
 .complete {
   text-align: center;
 	background-color: #F3F3F3
-}
-
-.complete-img {
-  margin: 20px 0 0 0;
-	padding-bottom: 40px;
 }
 
 /* footer */
