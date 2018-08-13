@@ -1,0 +1,266 @@
+/*リセット*/
+body, p, h1, h2, h3, ul, li, ol, a, img, div{
+	margin: 0;
+	padding: 0;
+}
+
+h2, h3 {
+	font-weight: normal;
+}
+ul{
+	list-style: none;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover{
+	opacity: 0.6;
+}
+* {
+	box-sizing: border-box;
+}
+/*----------内容----------*/
+
+body{
+	color: #222;
+	font-size: 16px;
+	font-family: "SF Pro JP","SF Pro Display","SF Pro Icons","Hiragino Kaku Gothic Pro",
+	"ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica",
+	"Arial",sans-serif;
+	line-height: 1.7;
+	background-color: #756360;
+}
+main{
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.vacant {
+	height: 73px;
+}
+header {
+	height: 73px;
+	width: 100%;
+	background-color: #DEBABB;
+	position: fixed;
+	z-index: 10;
+	padding: 10px;
+	color: #fff;
+}
+.header-container {
+ 	max-width: 1170px;
+	width: 100%;
+ 	padding: 0 15px;
+ 	margin: 0 auto;
+}
+
+.nav-list{
+  display: flex;
+  float: right;
+	line-height: 60px;
+	padding-right: 20px;
+}
+.nav-list li{
+	letter-spacing: 1.5px;
+	margin-right: 15px;
+	font-size: 15pt;
+}
+
+.container {
+	padding: 250px 0 0 0;
+}
+
+.catch {
+	font-size: 40px;
+	text-align: center;
+	text-shadow: 5px 0px grey;
+	opacity: 1.0;
+	color: #fff;
+	letter-spacing: 2px;
+}
+
+.intro {
+	/*background-color: #50312D;*/
+	color: #fff;
+	height: 200px;
+	padding: 0 20px;
+	font-size: 20px;
+}
+
+.ss{
+	margin-bottom: 1em;
+  text-align: center;
+}
+
+/* top */
+
+.top {
+  height: 600px;
+	background-image: url(../img/top.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+  color: #FAFAFA
+}
+
+/* preparations */
+
+.preparations {
+  text-align: center;
+}
+
+.heading{
+ 	text-align: center;
+ 	font-weight: normal;
+ 	font-size: 25px;
+ 	letter-spacing: 1.4px;
+ 	padding: 40px 0 5px 0;
+ }
+
+.description {
+  display: inline-block;
+  font-size: 16px;
+  color: #535353;
+  letter-spacing: 0.2em;
+  border-bottom: solid 1px orange;
+}
+
+.preparations .flex {
+  margin: 40px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.item {
+  text-align: center;
+  width: 250px;
+  /* background: #ff11ff; */
+}
+
+.item img {
+  border-radius: 10%;
+  border: 6px solid #800000;
+}
+
+.item-text {
+  display: inline-block;
+  margin-top: 5px;
+}
+.item h3{
+  font-weight: bold;
+  font-size: 16px;
+}
+.item p{
+  margin-top: 5px;
+  font-size: 12px;
+  text-align: left;
+  letter-spacing: 0.05em;
+}
+
+/* grind */
+
+.grind {
+  text-align: center;
+	background-color: #F3F3F3
+}
+
+.desc02 {
+  display: inline-block;
+  margin:10px 0;
+  letter-spacing: 0.2em;
+  color: #535353;
+}
+
+.grind-desc span {
+  color: red;
+}
+
+.mill-img {
+  margin:20px 0 40px 0;
+	padding-bottom: 40px;
+}
+
+/* steam */
+.steam {
+  text-align: center;
+}
+
+.steam-img {
+  margin: 20px 0 0 0;
+}
+
+.steam-desc {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  color: red;
+  margin-bottom: 40px;
+}
+
+/* hotwater */
+.hotwater {
+  text-align: center;
+	background-color: #F3F3F3
+}
+
+.hotwater-img {
+  margin: 20px 0 0 0;
+	padding-bottom: 40px;
+}
+
+/* pour */
+.pour {
+  text-align: center;
+}
+
+.pour-img {
+  margin: 20px 0 0 0;
+	padding-bottom: 40px;
+}
+
+/* complete */
+.complete {
+  text-align: center;
+	background-color: #F3F3F3
+}
+
+.complete-img {
+  margin: 20px 0 0 0;
+	padding-bottom: 40px;
+}
+
+/* footer */
+footer{
+	width: 100%;
+	height:80px;
+	background-color: #DEBABB;
+	padding: 0px;
+	color: #fff;
+	text-align: center;
+	clear: both;
+}
+
+.footer-logo {
+		margin-top: 10px;
+		position: relative;
+		left: 30%;
+		float: left;
+}
+
+.footer-logo-img {
+	width: 40px;
+	height:60px;
+}
+
+/* footer .flex {
+  margin: 5px 0;
+	display: flex;
+  justify-content: space-around;
+}  */
+
+.policy {
+	position: relative;
+	right:30%;
+	top:20%;
+	float:right;
+	font-size: 14px;
+}
