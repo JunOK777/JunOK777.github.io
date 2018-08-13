@@ -50,7 +50,7 @@ header {
 
 .nav-list {
     display: flex;
-    float: right;
+		float: right;
     line-height: 60px;
     padding-right: 30px;
 }
@@ -124,6 +124,15 @@ header {
 	border-bottom: solid 2px orange;
 	letter-spacing: 0.1em;
 	margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+	.flex {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* justify-content: flex-start; */
+	}
 }
 
 .preparations .flex {
