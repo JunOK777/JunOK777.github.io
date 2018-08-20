@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="coffee,コーヒー,ドリップコーヒー">
+    <meta name="description" content="ドリップコーヒーの作り方を写真付きでわかりやすく解説します">
+
+    <title>ドリップコーヒを作ろう</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Font Awesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+  			<a class="logo" href="index.html"><img src="logo.png" alt="ロゴ画像"></a>
+  			<ul class="nav-list">
+  				<a href="index.html"><li><i class="fas fa-home"></i>home</li></a>
+          <a href="howto.html"><li><i class="fas fa-coffee"></i>how to</li></a>
+  				<a href="special.html"><li><i class="fas fa-hand-point-right"></i>special</li></a>
+  				<a href="contact.html"><li><i class="fas fa-address-book"></i>contact</li></a>
+  			</ul>
+  		</div>
+    </header>
+
+    <main>
+      <!-- top -->
+      <section class="top">
+        <div class="container">
+          <h1 class="catch">5分で簡単！ドリップコーヒーの淹れ方</h1>
+        </div>
+        <div class="intro">
+          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作ってみよう</p>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="contact">
+        <div class="heading">
+          <p>- お問い合わせ -</p>
+        </div>
+        <div class="form">
+          <div class="mails">
+            <p>メールアドレス</p>
+            <form class="mails" action="sent.php" method="post">
+              <input type="email" name="email" id="email" value="">
+            </form>
+          </div>
+          <div class="genders">
+            <p>性別</p>
+            <form class="sex" action="sent.php" method="post">
+              <input type="radio" name="gender" id="gender" value="male">男性
+              <input type="radio" name="gender" id="gender" value="female">女性
+              <input type="radio" name="gender" id="gender" value="secret">非公開
+            </form>
+          </div>
+          <div class="contact-content">
+            <p>内容</p>
+            <form class="contact-contents" action="sent.php" method="post">
+              <textarea name="content" id="content" rows="8" cols="80"></textarea>
+            </div>
+            <div class="send-button">
+              <input type="submit" name="tx" id="tx" value="送信">
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="policy">
+        <a href="howtodrip.html">プライバシーポリシー</a>
+        <p>© How to Drip, All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

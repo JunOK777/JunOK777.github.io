@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ja" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="keywords" content="coffee,コーヒー,ドリップコーヒー">
@@ -7,144 +7,97 @@
 
     <title>ドリップコーヒを作ろう</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.png">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <div class="header-container">
-        <!-- <p>コーヒーの淹れ方</p> -->
   			<a class="logo" href="index.html"><img src="logo.png" alt="ロゴ画像"></a>
   			<ul class="nav-list">
-  				<a href=""><li><i class="fas fa-home"></i>home</li></a>
-  				<a href=""><li><i class="fas fa-shopping-cart"></i>shop</li></a>
-  				<a href=""><li><i class="fas fa-coffee"></i>about</li></a>
+  				<a href="index.html"><li><i class="fas fa-home"></i>home</li></a>
+          <a href="howto.html"><li><i class="fas fa-coffee"></i>how to</li></a>
+  				<a href="special.html"><li><i class="fas fa-hand-point-right"></i>special</li></a>
+  				<a href="contact.html"><li><i class="far fa-address-book"></i>contact</li></a>
   			</ul>
   		</div>
     </header>
 
     <main>
       <!-- top -->
+      <!-- アニメーションをトップ画にする -->
       <section class="top">
         <div class="container">
-          <h1 class="catch">5分で簡単！ドリップコーヒーの淹れ方</h1>
+          <h1 class="catch">(仮) 5分で簡単！ドリップコーヒーの淹れ方</h1>
         </div>
         <div class="intro">
           <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作ってみよう</p>
         </div>
       </section>
-
-      <!-- preparation -->
-      <section class="preparations">
-        <h1 class="heading">- 準備 -</h1>
-        <div class="description">
-          <p>必要な機材を確認しよう</p>
+      <!-- site-desc -->
+      <section class="site-desc">
+        <div class="subtitle">
+          <h1 class="big">おいしいコーヒーを作りたい</h1>
         </div>
+        <div class="qa-cont">
+          <div class="ques">
+            <div class="ques-mark">
+              <p>Q：</p>
+            </div>
+            <div class="ques-desc">
+              <p>カフェででてくるようなコクのあるコーヒー、店員さんはどうやってつくっているの？</p>
+              <p>わたしも同じようなクオリティのコーヒーを作れるの？</p>
+            </div>
+          </div>
+          <div class="ans">
+            <p>A：作れます！</p>
+          </div>
+        </div>
+        <div class="desc2">
+          <h2>ドリップコーヒーの入れ方をご紹介</h2>
+          <p class="txts">手軽にお店で飲むようなおいしいコーヒーを作ろう！</p>
+        </div>
+      </section>
+      <!-- introduction -->
+      <section class="introduction">
         <div class="flex">
-          <div class="item">
-            <img src="dripper.jpg" class="img01" alt="ドリッパー">
-            <div class="item-text">
+          <div class="colums">
+            <a href="howto.html"><img src="howto.jpg" class="howto-img" width="300px" height="225px" alt="howto"></a>
+            <div class="colums-text">
               <div class="border-bottom">
-                <h3>ドリッパー</h3>
+                <a href="howto.html"><h3>How to</h3></a>
               </div>
-              <p>豆の受け皿。ドリッパーにフィルターをセットし、ミルで粉末状にした豆を入れてお湯を注ぐ</p>
+              <p>ドリップコーヒーの淹れ方を画像付きでわかりやすく解説します。</p>
             </div>
           </div>
-          <div class="item">
-            <img src="mill.jpg" class="img02" alt="ミル">
-            <div class="item-text">
+          <div class="colums">
+            <a href="special.html"><img src="special.jpg" class="special-img" width="300px" height="225px" alt="special"></a>
+            <div class="colums-text">
               <div class="border-bottom">
-                <h3>ミル</h3>
+                <a href="special.html"><h3>Special</h3></a>
               </div>
-              <p>豆を細かく砕くための機械。手動と電動タイプがある。砕く際に熱が籠らないようにゆっくりと回すのがコツ。電動の場合は刃が熱くなりにくいセラミック製がおすすめ。</p>
+              <p>おいしいコーヒーが飲めるカフェを紹介します。</p>
             </div>
           </div>
-          <div class="item">
-            <img src="pod.jpg" class="img03" alt="ポッド">
-            <div class="item-text">
+          <div class="colums">
+            <a href="contact.html"><img src="contact.jpg" class="contact-img" width="300px" height="225px" alt="contact"></a>
+            <div class="colums-text">
               <div class="border-bottom">
-                <h3>ポット</h3>
+                <a href="contact.html"><h3>Contact</h3></a>
               </div>
-              <p>ドリップ専用のポットは注ぎ口が通常より細くなっていて、ゆっくり調整しながら注げる構造なのが特徴。電気ケトル機能が一体となった物もある。</p>
+              <p>お問い合わせはこちらからどうぞ。</p>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- grind -->
-      <section class="grind">
-        <h1 class="heading">- コーヒー豆を挽く -</h1>
-        <div class="desc">
-          <p>1杯につき、約<span class="grind-color">12g</span>の豆を使用します。</p>
-          <p>挽き具合は中～粗挽きがおすすめです。粗さにバラつきの出にくいミルを使用しましょう。</p>
-        </div>
-        <div class="imgs">
-          <img src="mill02.jpg" class="images2" alt="ミル02">
-        </div>
-      </section>
-
-      <!-- steam -->
-      <section class="steam">
-        <h1 class="heading">- 蒸らす -</h1>
-        <div class="desc">
-          <p>粉をドリッパーに入れたら平らにならし、お湯を全体に注いでいきます。</p>
-          <p>全体にお湯をかけたら注ぐのを止め、30秒程そのまま蒸します。</p>
-        </div>
-        <div class="imgs">
-          <img src="steam.jpg" class="images" alt="蒸らし">
-        </div>
-        <div class="steam-desc">
-          <p>※膨らむのは豆が新鮮な証！</p>
-        </div>
-      </section>
-
-      <!-- hotwater -->
-      <section class="hotwater">
-        <h1 class="heading">- お湯を注ぐ -</h1>
-        <div class="desc">
-          <p>蒸した後はお湯を注いでいきます。</p>
-          <p>この時円を描くように、ゆっくりとお湯を置く感じで注ぎます。</p>
-        </div>
-        <div class="imgs">
-          <img src="hotwater.jpg" class="images2" alt="お湯を注ぐ">
-        </div>
-      </section>
-
-      <!-- pour -->
-      <section class="pour">
-        <h1 class="heading">- カップに入れる -</h1>
-        <div class="desc">
-          <p>サーバーを軽く回して均一にしながら注ぎます。</p>
-          <p>コーヒーが覚めにくいよう、事前にカップにお湯を注いで温めておきます。</p>
-        </div>
-        <div class="imgs">
-          <img src="pour.jpg" class="images" alt="カップに入れる">
-        </div>
-      </section>
-
-      <!-- complete -->
-      <section class="complete">
-        <h1 class="heading">- 完成 -</h1>
-        <div class="desc">
-          <p>カップに注いだら完成です。</p>
-          <p>温度による味の変化を楽しみながらいただきましょう！</p>
-        </div>
-        <div class="imgs">
-          <img src="complete.jpg" class="images2" alt="完成">
-        </div>
-      </section>
-
     </main>
-
     <!-- footer -->
     <footer>
-        <div class="footer-logo">
-          <a href="howtodrip.html"><img src="footer-logo.png" class="footer-logo-img" alt="フッターロゴ"></a>
-        </div>
-        <div class="policy">
-          <a href="index.html">プライバシーポリシー</a>
-          <p>© How to Drip, All Rights Reserved.</p>
-        </div>
+      <div class="policy">
+        <a href="howtodrip.html">プライバシーポリシー</a>
+        <p>© How to Drip, All Rights Reserved.</p>
       </div>
     </footer>
   </body>
