@@ -172,6 +172,7 @@ color: #666666;
 
 .colums {
 	width: 300px;
+	margin:0 5px;
 }
 
 .colums img {
@@ -235,6 +236,7 @@ color: #666666;
 .item {
   text-align: center;
   width: 310px;
+	margin: 0 5px;
 }
 
 .item img {
