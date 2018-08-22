@@ -103,6 +103,10 @@ header h1 {
     text-align: left;
   }
 
+  .img-rps {
+    width: 100%;
+  }
+
   /* -----------------special------------- */
   .spe-container {
     display: block;
