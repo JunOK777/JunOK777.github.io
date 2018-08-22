@@ -88,13 +88,13 @@ header h1 {
 
   .flex {
     /* flex-direction: column;
-    justify-content: center;
     justify-content: center; */
     display: block;
   }
 
   .colums {
-    margin :0 auto;
+    margin :0 0 0 30px;
+
     /* margin: 0 20px 10px 0; */
   }
 
@@ -103,10 +103,6 @@ header h1 {
   }
 
   /* ---------------howto---------------- */
-
-  .img-rps {
-    width: 100%;
-  }
 
   .desc {
     padding:0 10px;
