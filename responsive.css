@@ -90,7 +90,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     justify-content: center;
-    /* display: block; */
+    margin: auto;
   }
 
   .colums {
