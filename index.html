@@ -7,6 +7,9 @@
 
     <title>ドリップコーヒを作ろう</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Font Awesome -->
@@ -14,26 +17,31 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-  			<a class="logo" href="index.html"><img src="logo.png" alt="ロゴ画像"></a>
-  			<ul class="nav-list">
-  				<a href="index.html"><li><i class="fas fa-home"></i>home</li></a>
-          <a href="howto.html"><li><i class="fas fa-coffee"></i>how to</li></a>
-  				<a href="special.html"><li><i class="fas fa-hand-point-right"></i>special</li></a>
-  				<a href="contact.html"><li><i class="far fa-address-book"></i>contact</li></a>
-  			</ul>
-  		</div>
+      <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <!-- <nav id="menu" class="shown"> -->
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="howto.html">how to</a></li>
+          <li><a href="special.html">special</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"><img src="logo.png" alt="logo"></a>
+    </div>
     </header>
 
     <main>
       <!-- top -->
       <!-- アニメーションをトップ画にする -->
       <section class="top">
-        <div class="container">
-          <h1 class="catch">(仮) 5分で簡単！ドリップコーヒーの淹れ方</h1>
+        <div class="top-container">
+          <h1 class="catch">最高の１杯のために</h1>
         </div>
         <div class="intro">
-          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作ってみよう</p>
+          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作りたい</p>
         </div>
       </section>
       <!-- site-desc -->
@@ -100,5 +108,22 @@
         <p>© How to Drip, All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+  (function() {
+    'use strict';
+
+    var openMenu = document.getElementById('open_menu');
+    var closeMenu = document.getElementById('close_menu');
+    var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function() {
+      menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+      menu.classList.remove('shown');
+      });
+    })();
+    </script>
   </body>
 </html>

@@ -7,6 +7,9 @@
 
     <title>ドリップコーヒを作ろう</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Font Awesome -->
@@ -14,25 +17,31 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-  			<a class="logo" href="index.html"><img src="logo.png" alt="ロゴ画像"></a>
-  			<ul class="nav-list">
-  				<a href="index.html"><li><i class="fas fa-home"></i>home</li></a>
-          <a href="howto.html"><li><i class="fas fa-coffee"></i>how to</li></a>
-  				<a href="special.html"><li><i class="fas fa-hand-point-right"></i>special</li></a>
-  				<a href="contact.html"><li><i class="fas fa-address-book"></i>contact</li></a>
-  			</ul>
-  		</div>
+      <div class="container">
+      <i id="open_menu" class="fas fa-bars"></i>
+      <!-- <nav id="menu" class="shown"> -->
+      <nav id="menu">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="howto.html">how to</a></li>
+          <li><a href="special.html">special</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html"><img src="logo.png" alt="logo"></a>
+    </div>
     </header>
 
     <main>
       <!-- top -->
+      <!-- アニメーションをトップ画にする -->
       <section class="top">
-        <div class="container">
-          <h1 class="catch">5分で簡単！ドリップコーヒーの淹れ方</h1>
+        <div class="top-container">
+          <h1 class="catch">最高の１杯のために</h1>
         </div>
         <div class="intro">
-          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作ってみよう</p>
+          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作りたい</p>
         </div>
       </section>
 
@@ -81,7 +90,7 @@
           <p>挽き具合は中～粗挽きがおすすめです。粗さにバラつきの出にくいミルを使用しましょう。</p>
         </div>
         <div class="imgs">
-          <img src="mill02.jpg" class="images2" alt="ミル02">
+          <img src="mill02.jpg" class="images2 img-rps" alt="ミル02">
         </div>
       </section>
 
@@ -93,7 +102,7 @@
           <p>全体にお湯をかけたら注ぐのを止め、30秒程そのまま蒸します。</p>
         </div>
         <div class="imgs">
-          <img src="steam.jpg" class="images" alt="蒸らし">
+          <img src="steam.jpg" class="images img-rps" alt="蒸らし">
         </div>
         <div class="steam-desc">
           <p>※膨らむのは豆が新鮮な証！</p>
@@ -108,7 +117,7 @@
           <p>この時円を描くように、ゆっくりとお湯を置く感じで注ぎます。</p>
         </div>
         <div class="imgs">
-          <img src="hotwater.jpg" class="images2" alt="お湯を注ぐ">
+          <img src="hotwater.jpg" class="images2 img-rps" alt="お湯を注ぐ">
         </div>
       </section>
 
@@ -120,7 +129,7 @@
           <p>コーヒーが覚めにくいよう、事前にカップにお湯を注いで温めておきます。</p>
         </div>
         <div class="imgs">
-          <img src="pour.jpg" class="images" alt="カップに入れる">
+          <img src="pour.jpg" class="images img-rps" alt="カップに入れる">
         </div>
       </section>
 
@@ -132,7 +141,7 @@
           <p>温度による味の変化を楽しみながらいただきましょう！</p>
         </div>
         <div class="imgs">
-          <img src="complete.jpg" class="images2" alt="完成">
+          <img src="complete.jpg" class="images2 img-rps" alt="完成">
         </div>
       </section>
 
@@ -150,5 +159,22 @@
         <p>© How to Drip, All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+  (function() {
+    'use strict';
+
+    var openMenu = document.getElementById('open_menu');
+    var closeMenu = document.getElementById('close_menu');
+    var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function() {
+      menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+      menu.classList.remove('shown');
+      });
+    })();
+    </script>
   </body>
 </html>

@@ -7,32 +7,41 @@
 
     <title>ドリップコーヒを作ろう</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <!--viewport-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.png">
     <!-- Font Awesome -->
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div class="header-container">
-  			<a class="logo" href="index.html"><img src="logo.png" alt="ロゴ画像"></a>
-  			<ul class="nav-list">
-  				<a href="index.html"><li><i class="fas fa-home"></i>home</li></a>
-          <a href="howto.html"><li><i class="fas fa-coffee"></i>how to</li></a>
-  				<a href="special.html"><li><i class="fas fa-hand-point-right"></i>special</li></a>
-  				<a href="contact.html"><li><i class="fas fa-address-book"></i>contact</li></a>
-  			</ul>
-  		</div>
-    </header>
+    <body>
+      <header>
+        <div class="container">
+        <i id="open_menu" class="fas fa-bars"></i>
+        <!-- <nav id="menu" class="shown"> -->
+        <nav id="menu">
+          <i id="close_menu" class="fas fa-times"></i>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="howto.html">how to</a></li>
+            <li><a href="special.html">special</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+      </div>
+      </header>
 
     <main>
       <!-- top -->
       <section class="top">
-        <div class="container">
-          <h1 class="catch">5分で簡単！ドリップコーヒーの淹れ方</h1>
+        <div class="top-container">
+          <h1 class="catch">最高の１杯のために</h1>
         </div>
         <div class="intro">
-          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作ってみよう</p>
+          <p class="ss">カフェで飲むようなコクのあるおいしいコーヒーを作りたい</p>
         </div>
       </section>
 
@@ -42,7 +51,7 @@
           <p>- おすすめのカフェを紹介 -</p>
         </div>
         <div class="desc">
-         都内でおいしいハンドドリップコーヒーを淹れてくれるおすすめのカフェを紹介します。
+         都内でおいしいコーヒーを淹れてくれるおすすめのカフェを紹介します。
         </div>
 
         <div class="spe-container">
@@ -71,10 +80,9 @@
             <p>渋谷のカフェって全然わからないから友人に聞いたらここをオススメされた。なにがどうおすすめなのかは不明。ぜひあなた自身の目で確かめてきて欲しい。</p>
           </div>
           <div class="ggmap last">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12955.187840010569!2d139.7060454!3d35.7312117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde543c71a1d7015d!2z44OJ44Oq44O844Og44Kz44O844OS44O8!5e0!3m2!1sja!2sjp!4v1534689387206" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12966.576119161226!2d139.69894!3d35.661141!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7df1c06f6622b079!2z5Lq66ZaT6Zai5L-CIChjYWZlIGRlIGNvcGFpbik!5e0!3m2!1sja!2sjp!4v1534863095728" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
-
       </section>
     </main>
     <!-- footer -->
@@ -84,5 +92,22 @@
         <p>© How to Drip, All Rights Reserved.</p>
       </div>
     </footer>
+    <script>
+  (function() {
+    'use strict';
+
+    var openMenu = document.getElementById('open_menu');
+    var closeMenu = document.getElementById('close_menu');
+    var menu = document.getElementById('menu');
+
+      openMenu.addEventListener('click', function() {
+      menu.classList.add('shown');
+      });
+
+      closeMenu.addEventListener('click', function() {
+      menu.classList.remove('shown');
+      });
+    })();
+    </script>
   </body>
 </html>
